@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar {
+  width: 100%;
+  background-color:#FF6969;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(180deg,#081b29,#0ef);
+}
+.navBar h1 {
+  font-size: 30px;
+  padding: 10px 20px;
+  text-shadow:2px 2px wheat;
+}
+.navBar .subMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  transition:all 0.8s;
+  
+}
+.navBar .subMenu  a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+input{
+  display: none;
+}
+.navBar .subMenu  a:hover {
+  background-color: white;
+  color: #0ef;
+}
+.navBar i{
+  display: none;
+}
+.navBar input:checked ~ .subMenu{
+  background: linear-gradient(180deg,#081b29,#0ef);
+
+left: 0%;
+}
+
+.Catholl{
+  width:100%;
+  display: flex;
+  place-content: center;
+  position: relative;
+  top:80px;
+
+}
+.Catwall{
+  width:90%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px solid black;
+  background: linear-gradient(180deg,#081b29,#0ef);
+  border-radius: 30px;
+}
+.Catw{
+  position:absolute;
+  left:10%;
+  top:0;  
+}
+.CatT{
+  position: absolute;
+  right:160px;
+  top:50px;
+  color: #0ef;
+  text-align: center;
+}
+.CatT h2{
+  font-size: 35px;
+}
+.CatT h3{
+  font-size: 25px;
+}
+.CatT span{
+  font-size: 27px;
+  color: white;
+}
+.CatT button{
+  padding: 10px;
+  border-radius:15px;
+  border: 0px solid #FF6969;
+  color: white;
+  background: linear-gradient(180deg,#081b29,#0ef);
+  margin: 10px;
+  cursor: pointer;
+}
+.Catw img{
+  height: 220px;
+  background: linear-gradient(180deg,#081b29,#0ef);
+  border-radius: 10px;
+}
+
+
+/* dogs */ 
+h1{
+  text-align: center;
+  padding:5px;
+  text-shadow: 2px 2px #0ef;
+}
+.FlipHoll{
+  position: relative;
+  top:80px;
+}
+.Flip{
+  width:100%;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  /* flex-wrap:wrap ; */
+  gap: 20px;
+ 
+}
+.flip-card{
+  position:relative;
+  width: 240px ;
+  height: 220px;
+  text-align: center;
+}
+.flip-card-inner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.9s ease;
+  background-color: white;
+ 
+}
+.flip-card-inner:hover{
+  transform: rotateY(180deg);
+}
+.flip-card-front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}  
+.iconarrow .iconarr{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+.flip-card-front img{
+  width: 240px;
+  height: 220px; 
+   object-fit:fill;
+   border-radius: 10px;
+}
+.flip-card-back{
+  position: absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  background: linear-gradient(180deg,#081b29,#0ef);
+  color:#0ef;
+  transform: rotateY(180deg);
+  padding: 10px;
+  border-radius: 10px;
+}
+.flip-card-back h4{
+   padding: 15px;
+}
+.flip-card-back button{
+  padding: 5px;
+  border-radius: 5px;
+  border:0px solid #081b29;
+  color: #081b29;
+}
+.iconarr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+
+/* dogdry */
+.DryFoodConHoll,.CatAccessoriesholl{ 
+  position: relative;
+  top:80px;
+}
+.DryFoodCon,.CatAccessories{
+  display:grid; 
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  gap:10px; 
+
+}
+.DryCard1{
+  width:250px;
+  height: 350px;
+  border: 2px solid #081b29;
+  padding: 10px;
+  border-radius: 10px;
+}
+.Foodcard{
+  width:250px;
+  height: 390px;
+  border: 2px solid #081b29;
+  padding: 10px;
+  border-radius: 10px;
+}
+.DryimgBox1,.CatimgBox{
+  position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+.DryimgBox1 .img2{
+  position: absolute;
+  top:0;
+  opacity: 0; 
+  transition: all 0.9s ease-in-out;
+}
+.CatimgBox img:hover{
+  transform: scale(1.1);
+}
+.CatimgBox{
+  margin-bottom: 10px;
+}
+.CatFoodContent p{
+  height: 80px;
+  padding:10px;
+  font-size: 15px;
+}
+.DryFoodContent p{
+  height: 60px;
+  padding:10px;
+  font-size: 15px;
+}
+.DryFoodContent h4,.CatFoodContent h4{
+  padding:15px 5px;
+  color: gray;
+}
+.DryimgBox1 .img2:hover{
+  opacity: 1;
+  text-align: center;
+  margin: auto;
+}
+.DryimgBox1 img,.CatimgBox img{
+  height: 150px;
+}
+.BoxRev img{
+   width: 100px;
+}
+.BoxRev h6,h2,h3{
+  display:inline-block;
+}
+.BoxRev h3{
+  background-color: red;
+  color: white;
+  padding: 3px;
+  font-size: 13px;
+}
+.BoxRev span{
+  font-size: 15px;
+}
+.BoxRev h2{
+  padding-top:5px;
+}
+.DryFoodContent h4{
+  color:#081b29;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.BoxRev h6{
+  font-size: 15px;
+}
+
+/* footer */
+footer{
+  position: relative;
+  top:180px;
+  background: linear-gradient(80deg,#081b29,#0ef);
+  padding: 10px;
+  width: 100%;
+}
+.icon{
+    font-size: 30px;
+}
+.icon i:hover{
+    color:#FFF5E0;  
+}
+#Footer{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  gap: 10px;
+
+ }
+#foot{
+  width:200px;
+ }
+#foot button{
+  color: #0ef;
+  border-radius: 20px;
+  padding: 10px;
+  background-color:black;
+  border: 0px solid #081b29;
+  cursor: pointer;
+}
+#foot button:hover{
+  background-color: white;
+}
+
+@media screen and (max-width:800px) {
+  .navBar .subMenu{
+    position:fixed;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    background-color: black;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    height: 90vh;
+  }
+  .navBar{
+    position: fixed;
+  }
+  .navBar i{
+    display: inline-block;
+    font-size: 30px; 
+  
+  }
+  }
+  @media only screen and (min-width:300px) and (max-width:500px){
+    .Flip,.DryFoodCon,.CatAccessories,#Footer{
+      grid-template-columns:auto;
+      gap:40px;
+    }
+    .Catholl{
+      width:100%;
+      display: flex;
+      place-content: center;
+      position: relative;
+      top:80px;
+    
+    }
+    .Catwall{
+      height: 450px;
+      position: relative;
+      top:0px;
+    }
+    .Catw{
+      position:absolute;
+      left:23px;
+      top:0;  
+    }
+    .CatT{
+      position: relative;
+      left:5px;
+      top:-100px;
+      text-align: center;
+    }
+    .Catw img{
+      height: 220px;
+      width:180px;
+      position: absolute;
+      top:220px;
+      left: 30px;
+    }
+    
+  }
+@media only screen and (min-width:500px) and (max-width:800px){
+.Flip,.DryFoodCon,.CatAccessories,#Footer{
+    grid-template-columns: auto auto ;
+    row-gap: 40px;
+  }
+  .CatT{
+    top:30px;
+    right:55px;
+
+  }
+  .Catw img{
+    left: 0%;
+    top:0%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*  */

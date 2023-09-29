@@ -1,0 +1,361 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navBar {
+  width: 100%;
+  background-color:#FF6969;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(180deg,#081b29,#0ef);
+}
+.navBar h1 {
+  font-size: 30px;
+  padding: 10px 20px;
+  text-shadow:2px 2px wheat;
+}
+.navBar .subMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  transition:all 0.9s;
+  
+}
+.navBar .subMenu  a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+input{
+  display: none;
+}
+.navBar .subMenu  a:hover {
+  background-color: white;
+  color: #0ef;
+}
+.navBar i{
+  display: none;
+}
+.navBar input:checked ~ .subMenu{
+background:linear-gradient(80deg,#081b29,#0ef);
+left: 0%;
+}
+
+/* Home Front  */
+
+.FrontHoll{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:100px;
+
+}
+.Front{
+  width:90%;
+  height:300px ;
+  display: flex;
+  position:relative;
+  background: linear-gradient(10deg,#081b29,#0ef);
+  border-radius: 50px;
+}
+.FrontText{
+  position: absolute;
+  left:10%;
+  top:25%;
+  font-family: 'Noto Serif', serif;
+}
+.FrontText h1{
+  color: white;
+  text-shadow: 4px 2px black;
+}
+.FrontText h3{
+  text-shadow: 2px 2px white;
+}
+.FrontText h4{
+  text-shadow: 1px 1px white;
+}
+.FrontImg{
+  position: absolute;
+  right:10%;
+  top:5%;
+}
+.FrontImg img{
+  width:500px;
+  height: 280px;
+  background: linear-gradient(10deg,#081b29);
+  /* border-radius: 50px; */
+  
+}
+/* shipping */
+.shippingholl {
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  position: relative;
+  top:150px;
+}
+.shipping {
+  width: 200px;
+  height: 180px; 
+  border-radius: 10px;
+  padding: 20px;
+  background: linear-gradient(60deg,#081b29,#0ef);
+  text-align: center;
+  color: white;
+}
+.shipping:hover{
+  transform: scale(1.1);
+}
+.sbox2 h4 {
+  padding: 20px 0px 10px 0px;
+  text-align: center;
+}
+.bicon {
+  font-size: 30px;
+  color: white;
+}
+
+
+/* animals */
+.animalsholl{ 
+  position: relative;
+  top:200px;
+}
+.animals{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.animals img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* border:4px solid #081b29; */
+  padding: 5px;
+  object-fit:cover;
+  background: linear-gradient(60deg,#081b29,#0ef);
+}
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+h5 {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+}
+a{
+  text-decoration: none;
+}
+/* adv */
+.advholl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top:240px;
+}
+.adv {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(60deg,#081b29,#0ef);
+  gap:10px;
+  border-radius: 20px;
+}
+.content {
+  border: 2px solid #FFF5E0;
+  text-align: center;
+  padding: 10px;
+  background-color: #FFF5E0;
+  border-radius:5% 30%;
+  height: 300px;
+}
+.content h2 {
+  padding:30px 20px 10px 20px;
+}
+.content p {
+  word-spacing: 4px;
+  padding:10px;
+}
+.content button {
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  background: linear-gradient(60deg,#081b29,#0ef);
+  cursor: pointer;
+}
+.contentimg img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+} 
+
+/* Review */
+.reviewcard{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap:wrap;
+  position: relative;
+  top:350px
+}
+.revbox1,.revbox2,.revbox3{
+  width:300px;
+  padding: 30px 10px 40px 10px;
+  text-align: center;
+  box-shadow: 2px 2px 4px 5px #081b29;
+}
+.revimg img{
+  width:100px;
+}
+.revi p{
+  height: 250px;
+  padding-bottom: 40px;
+}
+
+
+/* footer */
+footer{
+  position: relative;
+  top:400px;
+  background: linear-gradient(90deg,#081b29,#0ef);
+  padding: 10px;
+  width: 100%;
+}
+.icon{
+    font-size: 30px;
+}
+.icon i:hover{
+    color:#FFF5E0;  
+}
+#Footer{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  gap: 10px;
+
+ }
+#foot{
+  width:200px;
+ }
+#foot button{
+  color: #081b29;
+  border-radius: 20px;
+  padding: 10px;
+  background:linear-gradient(#081b29,#0ef);
+  cursor: pointer;
+}
+#foot button:hover{
+  background-color: white;
+}
+ @media screen and (max-width:800px) {
+.navBar .subMenu{
+  position:fixed;
+  flex-direction: column;
+  justify-content: start;
+  padding-top: 50px;
+  background-color: black;
+  top: 60px;
+  left: 100%;
+  width: 100%;
+  height: 90vh;
+}
+.navBar{
+  position: fixed;
+}
+.navBar i{
+  display: inline-block;
+  font-size: 30px; 
+}
+
+}
+@media only screen and (min-width:300px) and (max-width:500px)
+{
+  .FrontHoll{
+  }
+  .Front{
+    width:90%;
+    height:320px;
+  }
+  .FrontText{
+    position: absolute;
+    left:10%;
+    top:10px;
+    font-family: 'Noto Serif', serif;
+  }
+  
+  .FrontImg{
+    position: absolute;
+    left:20px;
+    top:150px;
+  }
+  .FrontImg img{
+    width:250px;
+    height:150px;
+  }
+
+  .adv{
+    height:580px;
+    flex-direction: column;
+    padding-top:20px; 
+  }
+  .adv .content{
+    height: 360px;
+  }
+  .contentimg img{
+    width:170px;
+    height: 170px;
+    border-radius: 50%;
+  }
+  .reviewcard{
+    row-gap: 40px;
+  }
+  .revbox1,.revbox2,.revbox3{
+    width:250px;
+  }
+  #Footer{
+    grid-template-columns: auto;
+  }
+  .shippingholl,.animals{
+    grid-template-columns: auto;
+    row-gap: 30px;
+  }
+}
+@media only screen and (min-width:500px) and (max-width:800px){
+  #Footer{
+    grid-template-columns: auto auto;
+  }
+  .shippingholl,.animals{
+    grid-template-columns: auto auto;
+    row-gap: 30px;
+  }
+  .reviewcard{
+    row-gap: 40px;
+  }
+  .FrontText{
+    left:30px;
+  }
+  .FrontImg{
+    right:30px;
+  }
+  .FrontImg img{
+    width:350px
+  }
+}

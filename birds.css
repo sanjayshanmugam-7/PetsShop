@@ -1,0 +1,427 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navBar {
+  width: 100%;
+  background-color:#FF6969;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  z-index: 999;
+  background: linear-gradient(180deg,#081b29,#0ef);
+}
+.navBar h1 {
+  font-size: 30px;
+  padding: 10px 20px;
+  text-shadow:2px 2px wheat;
+}
+.navBar .subMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  transition:all 0.9s;
+  
+}
+.navBar .subMenu  a{
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+input{
+  display: none;
+}
+.navBar .subMenu  a:hover {
+  background-color: white;
+  color: #0ef;
+}
+.navBar i{
+  display: none;
+}
+.navBar input:checked ~ .subMenu{
+background: linear-gradient(80deg,#081b29,#0ef);
+left: 0%;
+}
+
+.Birdsholl{
+  width:100%;
+  display: flex;
+  place-content: center;
+  position: relative;
+  top:80px;
+
+}
+.Birdswall{
+  width:90%;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px solid black;
+  background: linear-gradient(180deg,#081b29,#0ef);
+  border-radius: 30px;
+}
+.Birds{
+  position:absolute;
+  left:250px;
+  top:0;  
+}
+.Birdstext{
+ position: absolute;
+  right:160px;
+  top:50px;
+  color: #8DDFCB;
+  text-align: center;
+}
+.Birdstext h2{
+  font-size: 35px;
+}
+.Birdstext h3{
+  font-size: 25px;
+}
+.Birdstext span{
+  font-size: 27px;
+  color: white;
+}
+.Birdstext button{
+  padding: 10px;
+  border-radius:15px;
+  color: white;
+  background: linear-gradient(180deg,#081b29,#0ef);
+  margin: 10px;
+  cursor: pointer;
+  border: 0px solid #081b29;
+}
+.Birds img{
+  height: 220px;
+  background: linear-gradient(180deg,#081b29,#0ef);
+}
+
+
+/* birds */ 
+h1{
+  text-align: center;
+  padding:5px;
+  text-shadow: 2px 2px #0ef;
+}
+.FlipHoll{
+  position: relative;
+  top:100px;
+}
+.Flip{
+  width:100%;
+  display: grid;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  flex-wrap:wrap ;
+  gap: 20px;
+ 
+}
+.flip-card{
+  position:relative;
+  width: 240px ;
+  height: 220px;
+  text-align: center;
+  
+}
+.flip-card-inner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.9s ease;
+  background-color: white;
+ 
+}
+.flip-card-inner:hover{
+  transform: rotateY(180deg);
+}
+.flip-card-front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+ 
+
+}  
+.iconarrow .iconarr{
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+.flip-card-front img{
+  width: 240px;
+  height: 220px; 
+   object-fit:cover;
+   border-radius: 10px;
+}
+.flip-card-back{
+  position: absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+  background: linear-gradient(180deg,#081b29,#0ef);
+  color:#0ef;
+  transform: rotateY(180deg);
+  padding: 20px;
+  border-radius: 10px;
+}
+.flip-card-back button{
+  padding: 5px;
+  border-radius: 5px;
+  border:2px solid #0ef;
+  color: #081b29;
+}
+.iconarr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+
+/* dogdry */
+.DogAccessoriesholl{
+  position: relative;
+  top:80px;
+  
+}
+.DryFoodConHoll{ 
+  position: relative;
+  top:40px;
+}
+.DryimgBox:hover{
+  transform: scale(1.1);
+}
+.DryFoodCon,.DogAccessories{
+  display:grid; 
+  justify-content: space-evenly;
+  align-items: center;
+  position:relative;
+  grid-template-columns: auto auto auto auto;
+  gap:10px;
+ top:10px;  
+
+}
+.DryCard{
+  width:250px;
+  height:350px;
+  border: 2px solid #081b29;
+  padding: 15px;
+  border-radius: 5px;
+}
+.DryimgBox {
+  position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.img1{
+  position: relative;
+  left: 0%;
+  right: 0%;
+}
+.DryimgBox .img2{
+  position: absolute;
+  left:30px;
+  top: 0%;
+  opacity: 0; 
+  transition: all 0.6s ease-in-out;
+}
+.DryimgBox .img2:hover{
+  opacity: 1;
+  text-align: center;
+  margin: auto;
+}
+.DryimgBox img{
+  height: 160px;
+}
+.DryFoodContent {
+  /* text-align: center; */
+}
+.BoxRev img{
+   width: 100px;
+}
+.BoxRev h6,h2,h3{
+  display:inline-block;
+}
+.BoxRev h3{
+  background-color: red;
+  color: white;
+  padding: 3px;
+  font-size: 13px;
+}
+.DryFoodContent p{
+  font-size: 15px;
+  height: 55px;
+  padding-top: 20px;
+}
+.BoxRev span{
+  font-size: 15px;
+}
+.BoxRev h6{
+  padding-top: 20px;
+}
+.DryFoodContent h4,h6{
+  color:gray;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+.BoxRev h6{
+  font-size: 15px;
+}
+
+/* footer */
+footer{
+  position: relative;
+  top:180px;
+  background: linear-gradient(90deg,#081b29,#0ef);
+  padding: 10px;
+  width: 100%;
+}
+.icon{
+    font-size: 30px;
+}
+.icon i:hover{
+    color:#FFF5E0;  
+}
+#Footer{
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto;
+  padding: 20px;
+  gap: 10px;
+
+ }
+#foot{
+  width:200px;
+ }
+#foot button{
+  color: #0ef;
+  border-radius: 20px;
+  padding: 10px;
+  background-color:black;
+  border: 0px solid #081b29;
+  cursor: pointer;
+}
+#foot button:hover{
+  background-color: white;
+}
+
+@media screen and (max-width:800px) {
+  .navBar .subMenu{
+    position:fixed;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 50px;
+    background-color: black;
+    top:50px;
+    right:100%;
+    width: 100%;
+    height: 90vh;
+  }
+  .navBar{
+    position: fixed;
+  }
+  .navBar i{
+    display: inline-block;
+    font-size: 30px; 
+  
+  }
+  .Flip,.DryFoodCon,.DogAccessories,#Footer{
+    grid-template-columns: auto ;
+    gap:40px;
+  }
+  }
+  @media only screen and (min-width:300px) and (max-width:500px){
+    .Birdswall{
+      width:90%;
+      height: 330px;
+    }
+    .Birds{
+      left:300px;
+    }
+    .Birdstext{
+      left:20px;
+      top:50px;
+    }
+    .Birds img{
+      position: absolute;
+      top:90px;
+     right:0;
+      height: 190px;
+    }
+    
+    
+  }
+  @media only screen and (min-width:500px) and (max-width:800px){
+    .Flip,.DryFoodCon,.DogAccessories,#Footer{
+      grid-template-columns: auto auto ;
+      row-gap: 40px;
+  }
+  .Birds{
+    left:60px;
+  }
+  .Birdstext{
+    right: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*  */
