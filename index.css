@@ -288,8 +288,8 @@ footer{
 }
 @media only screen and (min-width:300px) and (max-width:500px)
 {
-  .FrontHoll{
-  }
+  /* .FrontHoll{
+  } */
   .Front{
     width:90%;
     height:320px;
